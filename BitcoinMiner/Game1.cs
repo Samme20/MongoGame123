@@ -1,107 +1,79 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using BitcoinMiner.States;
-
+using Microsoft.Xna.Framework.Audio;
+using BitcoinMiner.Screens;
+using BitcoinMiner.Managers;
 
 namespace BitcoinMiner
 {
-    /// <summary>
-    /// This is the main type for your game.
-    /// </summary>
     public class Game1 : Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public static int ScreenWidth = 1280;
+        public static int ScreenHeight = 720;
 
-        private State _currentState;
-        private State _nextState;
+        private GraphicsDeviceManager _graphics;
+        private SpriteBatch _spriteBatch;
 
 
-
-        public void ChangeState(State state)
-        {
-            _nextState = state;
-        }
+        private ScreenManager _screenManager;
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
+            _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            IsMouseVisible = true;
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         protected override void Initialize()
         {
-            IsMouseVisible = true;
-            graphics.PreferredBackBufferWidth = 1280;
-            graphics.PreferredBackBufferHeight = 960;
-            graphics.ApplyChanges();
+            _graphics.PreferredBackBufferWidth = ScreenWidth;
+            _graphics.PreferredBackBufferHeight = ScreenHeight;
+            _graphics.ApplyChanges();
 
             base.Initialize();
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+            _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            _currentState = new MenuState(this, graphics.GraphicsDevice, Content);
+
+            var soundEffect = Content.Load<SoundEffect>("Content/splashSound");
+            var splashImage = Content.Load<Texture2D>("Content/splashImage");
+
+            soundEffect.Play();
+
+            _screenManager = new ScreenManager(new IScreen[]
+            {
+                new SplashScreen(splashImage)
+            });
+
+            _screenManager.SetScreen(ScreenType.Splash);
+            _screenManager.SwitchToNextScreen();
+
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
-        /// </summary>
-        protected override void UnloadContent()
-        {
-            // TODO: Unload any non ContentManager content here
-        }
-
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if(_nextState != null)
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
-                _currentState = _nextState;
-
-                _nextState = null;
+                Exit();
             }
 
-            _currentState.Update(gameTime);
 
-            _currentState.PostUpdate(gameTime);
+            var delta = (float)(gameTime.ElapsedGameTime.TotalMilliseconds / 1000f);
+            _screenManager.Update(delta);
 
             base.Update(gameTime);
         }
 
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        /// 
-
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.AliceBlue);
+            GraphicsDevice.Clear(Color.Transparent);
 
-            _currentState.Draw(gameTime, spriteBatch);
-            
+            _screenManager.Draw(_spriteBatch);
+
             base.Draw(gameTime);
         }
     }

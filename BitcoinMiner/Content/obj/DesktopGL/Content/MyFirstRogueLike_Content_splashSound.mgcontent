@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/Content/MyFirstRogueLike_Content_splashSound.wav</SourceFile>
+  <SourceTime>2021-04-26T12:25:08.5012032+02:00</SourceTime>
+  <DestFile>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/bin/DesktopGL/Content/MyFirstRogueLike_Content_splashSound.xnb</DestFile>
+  <DestTime>2021-04-26T12:26:21.1848659+02:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
