@@ -4,9 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/Content/splashImage.png</File>
-    <File>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/Content/splashImage2.jpg</File>
-    <File>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/Content/splashSound.wav</File>
+    <File>E:/Coding/MongoGame123/BitcoinMiner/Content/Content/splashImage.png</File>
+    <File>E:/Coding/MongoGame123/BitcoinMiner/Content/Content/splashImage2.jpg</File>
+    <File>E:/Coding/MongoGame123/BitcoinMiner/Content/Content/splashSound.wav</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/Content/splashImage2.jpg</SourceFile>
+  <SourceFile>E:/Coding/MongoGame123/BitcoinMiner/Content/Content/splashImage2.jpg</SourceFile>
   <SourceTime>2021-04-26T12:24:59.1171532+02:00</SourceTime>
-  <DestFile>E:/Coding/BitcoinMinerGAME/BitcoinMiner/BitcoinMiner/Content/bin/DesktopGL/Content/Content/splashImage2.xnb</DestFile>
-  <DestTime>2021-04-26T14:20:44.0092963+02:00</DestTime>
+  <DestFile>E:/Coding/MongoGame123/BitcoinMiner/Content/bin/DesktopGL/Content/Content/splashImage2.xnb</DestFile>
+  <DestTime>2021-04-26T15:31:59.6858426+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

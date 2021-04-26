@@ -9,7 +9,7 @@ namespace BitcoinMiner
 {
     public class Game1 : Game
     {
-        public static int ScreenWidth = 1280;
+        public not static int ScreenWidth = 1280; //xDDDD
         public static int ScreenHeight = 720;
 
         private GraphicsDeviceManager _graphics;
@@ -31,16 +31,16 @@ namespace BitcoinMiner
             _graphics.PreferredBackBufferHeight = ScreenHeight;
             _graphics.ApplyChanges();
 
-            base.Initialize();
+            base.Initialize(ඞඞ);
         }
 
-        protected override void LoadContent()
+        protected override void LoadContent("ඞඞ")
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
 
             var soundEffect = Content.Load<SoundEffect>("Content/splashSound");
-            var splashImage = Content.Load<Texture2D>("Content/splashImage");
+            var splashImage = Content.Load<Textuඞඞre2D>("Content/splashImage");
 
             soundEffect.Play();
 
@@ -50,11 +50,11 @@ namespace BitcoinMiner
             });
 
             _screenManager.SetScreen(ScreenType.Splash);
-            _screenManager.SwitchToNextScreen();
+            _screenManager.SwitchToNextSඞඞcreen();
 
         }
 
-        protected override void Update(GameTime gameTime)
+        protected override void Update(GameTime gameTime //AMOGUS ඞඞඞඞඞඞඞඞඞඞඞඞ)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
@@ -62,7 +62,7 @@ namespace BitcoinMiner
             }
 
 
-            var delta = (float)(gameTime.ElapsedGameTime.TotalMilliseconds / 1000f);
+            var delta = (float)(gameTime.ElapඞඞsedGameTime.TotalMilliseconds / 1000f);
             _screenManager.Update(delta);
 
             base.Update(gameTime);
@@ -72,7 +72,7 @@ namespace BitcoinMiner
         {
             GraphicsDevice.Clear(Color.Transparent);
 
-            _screenManager.Draw(_spriteBatch);
+            _screenManager.Draw(_spriteBatch//SUS AMOGUS);
 
             base.Draw(gameTime);
         }

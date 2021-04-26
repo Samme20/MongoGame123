@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ShLnVKipGxSJer3NID8hiSpxM95HDGckPfWLXqCJ5EeNdL6FZcaE+eraGKJ/CRa9l7M5wTgZTRVJ4T4RliJJLQ==",
+  "dgSpecHash": "4O3hrAGs4ABj+G7GU43z+9H/nOJaBCJ+IYrnq8C34EoqCQVpHcVSe5cum5xiQCquwbbkKl4SIwYr/xENMrtdXg==",
   "success": true,
-  "projectFilePath": "E:\\Coding\\BitcoinMinerGAME\\BitcoinMiner\\BitcoinMiner\\BitcoinMiner.csproj",
+  "projectFilePath": "E:\\Coding\\MongoGame123\\BitcoinMiner\\BitcoinMiner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samme\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\Samme\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"

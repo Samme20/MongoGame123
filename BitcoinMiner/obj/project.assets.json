@@ -180,11 +180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Coding\\BitcoinMinerGAME\\BitcoinMiner\\BitcoinMiner\\BitcoinMiner.csproj",
+      "projectUniqueName": "E:\\Coding\\MongoGame123\\BitcoinMiner\\BitcoinMiner.csproj",
       "projectName": "BitcoinMiner",
-      "projectPath": "E:\\Coding\\BitcoinMinerGAME\\BitcoinMiner\\BitcoinMiner\\BitcoinMiner.csproj",
+      "projectPath": "E:\\Coding\\MongoGame123\\BitcoinMiner\\BitcoinMiner.csproj",
       "packagesPath": "C:\\Users\\Samme\\.nuget\\packages\\",
-      "outputPath": "E:\\Coding\\BitcoinMinerGAME\\BitcoinMiner\\BitcoinMiner\\obj\\",
+      "outputPath": "E:\\Coding\\MongoGame123\\BitcoinMiner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

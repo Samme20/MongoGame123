@@ -29,3 +29,9 @@ E:\Coding\BitcoinMinerGAME\BitcoinMiner\BitcoinMiner\bin\Debug\netcoreapp3.1\Con
 E:\Coding\BitcoinMinerGAME\BitcoinMiner\BitcoinMiner\bin\Debug\netcoreapp3.1\Content\splashSound.xnb
 E:\Coding\BitcoinMinerGAME\BitcoinMiner\BitcoinMiner\bin\Debug\netcoreapp3.1\Content\Content\splashImage2.xnb
 E:\Coding\BitcoinMinerGAME\BitcoinMiner\BitcoinMiner\bin\Debug\netcoreapp3.1\Content\splashImage2.xnb
+E:\Coding\MongoGame123\BitcoinMiner\obj\Debug\netcoreapp3.1\BitcoinMiner.csprojAssemblyReference.cache
+E:\Coding\MongoGame123\BitcoinMiner\obj\Debug\netcoreapp3.1\BitcoinMiner.AssemblyInfoInputs.cache
+E:\Coding\MongoGame123\BitcoinMiner\obj\Debug\netcoreapp3.1\BitcoinMiner.AssemblyInfo.cs
+E:\Coding\MongoGame123\BitcoinMiner\obj\Debug\netcoreapp3.1\BitcoinMiner.csproj.CoreCompileInputs.cache
+E:\Coding\MongoGame123\BitcoinMiner\obj\Debug\netcoreapp3.1\BitcoinMiner.dll
+E:\Coding\MongoGame123\BitcoinMiner\obj\Debug\netcoreapp3.1\BitcoinMiner.pdb
