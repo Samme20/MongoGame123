@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/19sasu/source/repos/MyGame/MyGame/Content/fonts/gameFont.spritefont</SourceFile>
+  <SourceTime>2021-04-13T14:25:40.1758944+02:00</SourceTime>
+  <DestFile>C:/Users/19sasu/source/repos/MyGame/MyGame/Content/bin/WindowsStoreApp/Content/fonts/gameFont.xnb</DestFile>
+  <DestTime>2021-04-13T14:26:36.4154025+02:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
